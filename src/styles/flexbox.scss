@@ -1,0 +1,22 @@
+@for $i from 1 through 100 {
+    .flex-#{$i} {
+        width: 1% * $i;
+        max-width: 1% * $i;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
