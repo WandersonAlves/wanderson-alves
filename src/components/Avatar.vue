@@ -1,4 +1,4 @@
-<style scoped>
+<style lang="scss" scoped>
 .avatar {
   width: 250px;
   height: 250px;
@@ -7,6 +7,13 @@
   border-radius: 50%;
   padding: 8px;
   animation: Gradient 25s ease infinite;
+
+  @media (max-width: 768px) {
+    width: 192px;
+    height: 192px;
+    padding: 6px;
+  }
+    
 }
 
 @keyframes Gradient {
