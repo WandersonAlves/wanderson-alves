@@ -21,6 +21,11 @@ p {
     font-size: 1em;
     font-weight: 300;
 }
+div {
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+}
 </style>
 
 
