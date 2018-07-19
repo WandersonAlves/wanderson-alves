@@ -2,8 +2,6 @@ import Vue from 'vue'
 import App from './App.vue'
 import './registerServiceWorker'
 
-import 'typeface-open-sans'
-import 'typeface-montserrat'
 import './styles/_index.scss'
 
 Vue.config.productionTip = false

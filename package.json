@@ -2,15 +2,24 @@
   "name": "wanderson-alves",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://wandersonalves.github.io/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WandersonAlves/wanderson-alves"
   },
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "register-service-worker": "^1.0.0",
-    "typeface-montserrat": "^0.0.54",
-    "typeface-open-sans": "^0.0.54",
     "vue": "^2.5.16"
   },
   "devDependencies": {
@@ -45,5 +54,8 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "vue": {
+    "baseUrl": "./"
+  }
 }
